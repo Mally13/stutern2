@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;600;&display=swap');
+        html,body{
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            background-color: #534c3a;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            margin:112px;
+            border-radius: 16px;
+            justify-self: center;            
+            height: 600px;
+        }
+        .dislike{
+            width:50%;
+            background-color: #f7c5cc;
+            color:#cc313d;
+            padding: 16px;
+            height: 600px;
+            border-radius: 0 16px 16px 0;
+            display: flex;
+            justify-items: center;
+            
+            flex-direction: column;
+        }
+        .like{
+            border-radius: 16px 0 0 16px;
+            width: 50%;
+            background-color:#dbeac6 ;
+            color:#497d59;
+            padding:16px;
+            height: 600px;
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+
+        }
+        .like>img{
+            width: 100px;
+            height: 100px;
+            margin: 16px auto;
+            justify-self: center;
+        }
+        
+        .dislike>img{
+            width: 100px;
+            height: 100px;
+            margin: 16px auto;
+            justify-self: center;
+        }
+        ul,ol{
+            justify-self: center;
+            margin: 16px auto;
+        }
+        li{
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 2;   
+            margin: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="like">
+            <img src="./like-button-icon.png" alt="like"/>
+            <ul>
+                <li>Hiking</li>
+                <li>Coding</li>
+                <li>Dancing </li>
+                <li>Watching Movies</li>
+                <li>Travel</li>
+            </ul>
+
+        </div>
+        <div class="dislike">
+            <img src="./dislike-button-icon.png" alt="dislike"/>
+            <ol>
+                <li>Washing Utensils</li>
+                <li>Expriencing bugs</li>
+                <li>Routines </li>
+                <li>Cold Seasons</li>
+                <li>Crowds</li>
+            </ol>
+            
+        </div>
+    </div>
+</body>
+</html>
